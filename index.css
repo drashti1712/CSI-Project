@@ -1,0 +1,35 @@
+
+.navbar-brand img
+{
+	height: 30px;
+	width: 100px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.form-inline li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.form-inline img{
+	height: 60px;
+	width: 60px;
+}
+.layout{
+	width: 80%;
+	float: right;
+}
+
+.layout button{
+	margin-top: 20px;
+}
+
+.mr-auto{
+	position: fixed;
+	right: 0;
+}
+
+.layout{
+	padding: 20vh;
+}
