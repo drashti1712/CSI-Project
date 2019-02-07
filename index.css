@@ -38,9 +38,81 @@
 	
 	max-width: 20vw;
 	height: 85vh;
-	margin: 20px;
+	margin-top: 12vh;
 }
 .card ul {
 	overflow-y: auto;
 }
 
+/*hukuukug*/
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 5%;
+  text-align: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 228px;
+  height:456px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 270px;
+  width:250px;
+  border-bottom:3px solid #25274D;
+}
+
+.slide-number {
+  color: #000;
+  font-size:17px;
+  padding:10px;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-top: 0px;}
+  30% {margin-top: -270px;}
+  50% {margin-top: -270px;}
+  60% {margin-top: -540px;}
+  70% {margin-top: -540px;}
+  80% {margin-top: -810px;}
+  90% {margin-top: -810px;}
+}
+
+#latest{
+	position: relative;
+	left:5px;
+	width:250px;
+	font-size:20px;
+	text-align: center;
+	background-color:#AAABBB;
+	padding:5px;
+}
+
+#sidebar {
+	position:fixed;
+	left:20px;
+	width:250px;
+	height:100vh;
+}
+
+.vl1{
+	position:fixed;
+	left:270px;
+	border-left: 5px solid #25274D;
+    height:100vh;
+}
+.vl2{
+	position:fixed;
+	left:20px;
+	border-left: 5px solid #25274D;
+    height:100vh;
+}
