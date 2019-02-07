@@ -8,32 +8,59 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-reverse bg-dark">
-	  			<a class="navbar-brand" href="#">
-	  			<img src="images/logo.png">
-	  			</a>
-	  			<form class="form-inline my-2 my-lg-0">
-		    	<ul class ="nav navbar-nav mr-auto">
+
+<!-- Navbar--------------------------------------------------------------------------------------------->
+		<nav class="navbar navbar-expand-lg navbar-reverse bg-dark fixed-top">
+	  		<a class="navbar-brand" href="#">
+	  			<img src="images/logolnm.png">
+	  		</a>
+	  		<form class="form-inline my-2 my-lg-0">
+		    	<ul class ="mr-auto">
 			  		<li><a href="#">Home</a></li>
 			  		<li><a href="#">Logout</a></li>
 			  		<li><img src="images/dp.png"></li>
 			  	</ul>
-				</form>
+			</form>
 		</nav>
 
 
-	<div class="layout">
-		<center><button type="button" class="btn btn-dark">Student Details</button>
-		<div class="container">
-		  <div class="row">
-		    <div class="col"><button type="button" class="btn btn-dark">Previous Results</button></div>
-		    <div class="col"><button type="button" class="btn btn-dark">Course Completed</button></div>
-		    <div class="w-100"></div>
-		    <div class="col"><button type="button" class="btn btn-dark">Complaint</button></div>
-		    <div class="col"><button type="button" class="btn btn-dark">LT - Booking</button></div>
+
+<!-- Main section--------------------------------------------------------------------------------------------->	
+		<div class="layout">
+			<center>
+				<button type="button" class="btn btn-dark">Student Details</button>
+				<div class="container">
+			  		<div class="row">
+			    		<div class="col"><button type="button" class="btn btn-dark">Previous Results</button></div>
+			    		<div class="col"><button type="button" class="btn btn-dark">Course Completed</button></div>
+			    		<div class="w-100"></div>
+			    		<div class="col"><button type="button" class="btn btn-dark">Complaint</button></div>
+			    		<div class="col"><button type="button" class="btn btn-dark">LT - Booking</button></div>
+					</div>
+					<button type="button" class="btn btn-dark">Upcoming Events</button>
+				<div>
+			</center>
 		</div>
-		<button type="button" class="btn btn-dark">Upcoming Events</button>
-		</center>
-	</div>
+
+
+
+
+	<!-- Notice board -------------------------------------------------------------------------------------------->
+		<div class="card" style="width: 18rem;">
+  			<div class="card-header">
+ 			   Latest news
+  			</div>
+  			
+  			<ul class="list-group">
+  			    <li class="list-group-item">Online Feedback Activity will be done as per following schedule - * The web-link for course/faculty feedback for the current semester will be activated as per the following schedule: From Thursday, April 16, 2015, 12.00 noon to Sunday, April 19, 2015, 11.59 pm.</li>
+				<li class="list-group-item" >Only the courses that you have enrolled for in this semester will be listed, matched with corresponding faculty name(s). If the list of courses is wrong or incomplete, contact admin (contact details as given below).</li>
+				<li class="list-group-item" >Your identity (roll number/name) will be detached from your feedback responses. So, please fill your feedback fairly and responsibly.</li>
+				<li class="list-group-item" >For courses taught by more than one faculty, fill the feedback for EACH faculty.</li>
+				<li class="list-group-item" >If your class was divided into sections, please fill the feedback ONLY for the faculty(s) who taught your section. </li>
+  			</ul>
+  			<div class="card-footer">
+  				For troubleshooting, contact MIS Administrator at mis.lnmiit@iitms.co.in (Phone Extension: 228)
+  			</div>
+  		</div>
 </body>
 </html>

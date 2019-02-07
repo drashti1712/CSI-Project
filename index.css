@@ -1,4 +1,6 @@
-
+/* 
+#464866#25274D
+*/
 .navbar-brand img
 {
 	height: 30px;
@@ -17,10 +19,9 @@
 	width: 60px;
 }
 .layout{
-	width: 80%;
+	width: 70%;
 	float: right;
 }
-
 .layout button{
 	margin-top: 20px;
 }
@@ -33,3 +34,13 @@
 .layout{
 	padding: 20vh;
 }
+.card {
+	
+	max-width: 20vw;
+	height: 85vh;
+	margin: 20px;
+}
+.card ul {
+	overflow-y: auto;
+}
+
