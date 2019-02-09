@@ -27,11 +27,11 @@
 .layout{
 	width: 70%;
 	float: right;
-	padding: 20vh;
+	padding: 6vh;
 }
 
 .layout button{
-	margin-top: 20px;
+	margin-top: 5vh;
 }
 
 
@@ -74,3 +74,16 @@
 
 
 
+.col button
+{
+	margin-top: 90px;
+}
+
+.upcoming{
+	margin-top: 7vh;	
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
