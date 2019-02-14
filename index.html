@@ -1,32 +1,35 @@
+<!-- width less than 366
+     button width vh
+     layout shifts down early -->
+
 <!DOCTYPE html>
 <html lang="eng">
   <head>
 
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Home</title>
-  	<link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
   </head>
-	<body>
+  <body>
+<!-- Navbar ---------------------------------------------------->
 
-<!-- Navbar -->
-
-		<nav class="navbar navbar-reverse fixed-top">
-	  		<a class="navbar-brand" href="#">
-	  			<img src="images/logolnm.png">
-	  		</a>
-	  		
-		    	<div class ="dropdown ml-auto">
-			  		
-			  		<button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+    <nav class="navbar navbar-reverse fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/logolnm.png">
+        </a>
+        
+          <div class ="dropdown ml-auto">
+            
+            <button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
               Hi, User
             </button>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -37,74 +40,59 @@
 
           
         </ul>
-			  	</div>
-		</nav>
+          </div>
+    </nav>
 
-
-<!-- Notice board -->
-    <!--div class="card" style="width: 18rem;">
-        <div class="card-header">
-         Latest news
-        </div>
-        
-        <ul class="list-group">
-            <li class="list-group-item"></li>
-        <li class="list-group-item" ></li>
-        <li class="list-group-item" ></li>
-        <li class="list-group-item" ></li>
-        <li class="list-group-item" > </li>
-        </ul>
-        <div class="card-footer">
-          For troubleshooting, contact MIS Administrator at mis.lnmiit@iitms.co.in (Phone Extension: 228)
-        </div>
-      </div-->
-
-
-<div id="sidebar">
-<h1>Latest News</h1>
-  <div id="slideshow">
-
-  <div class="slide-wrapper">
-    <div class="slide">Online Feedback Activity will be done as per following schedule - * The web-link for course/faculty feedback for the current semester will be activated as per the following schedule: From Thursday, April 16, 2015, 12.00 noon to Sunday, April 19, 2015, 11.59 pm.</div>
-    <div class="slide">Only the courses that you have enrolled for in this semester will be listed, matched with corresponding faculty name(s). If the list of courses is wrong or incomplete, contact admin (contact details as given below).</div>
-    <div class="slide">Your identity (roll number/name) will be detached from your feedback responses. So, please fill your feedback fairly and responsibly.</div>
-    <div class="slide">For courses taught by more than one faculty, fill the feedback for EACH faculty.</div>
-    <div class="slide">If your class was divided into sections, please fill the feedback ONLY for the faculty(s) who taught your section.</div>
+<main>
+<!-- Caurosel -------------------------------------------------->
+<div class="carousel slide" data-ride="carousel">
+  <div class="carousel-header"><h1>Latest News</h1></div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <p>Online Feedback Activity will be done as per following schedule - * The web-link for course/faculty feedback for the current semester will be activated as per the following schedule: From Thursday, April 16, 2015, 12.00 noon to Sunday, April 19, 2015, 11.59 pm.</p>
+    </div>
+    <div class="carousel-item">
+      <p>Only the courses that you have enrolled for in this semester will be listed, matched with corresponding faculty name(s). If the list of courses is wrong or incomplete, contact admin (contact details as given below).</p>
+    </div>
+    <div class="carousel-item">
+      <p>Your identity (roll number/name) will be detached from your feedback responses. So, please fill your feedback fairly and responsibly.</p>
+    </div>
+    <div class="carousel-item">
+      <p>If your class was divided into sections, please fill the feedback ONLY for the faculty(s) who taught your section.</p>
+    </div>
+    <div class="carousel-item">
+      <p>For courses taught by more than one faculty, fill the feedback for EACH faculty.</p>
+    </div>
   </div>
 </div>
-</div>
 
-<!-- Main section -->	
-		<div class="layout animated fadeIn">
-			<center>
-				<div>	
-					<button type="button" class="btn btn-dark">STUDENT DETAILS</button>
-				</div>
-				<div class="container option">
-			  		<div class="row">
-			    		<div class="col"><button type="button" class="btn btn-dark">PREVIOUS RESULTS</button></div>
-			    		<div class="col"><button type="button" class="btn btn-dark">COURSE COMPLETED</button></div>
-			    		<div class="w-100"></div>
-			    		<div class="col"><button type="button" class="btn btn-dark">COMPLAINT</button></div>
-			    		<div class="col"><button type="button" class="btn btn-dark">LT-BOOKING</button></div>
-					</div>
-					<div class="upcoming">
-						<button type="button" class="btn btn-dark">UPCOMING EVENTS</button>
-					</div>
-				</div>
-			</center>
-		</div>
+<!-- Main section ----------------------------------------------> 
+    <div class="layout animated fadeIn">
+      <center>
+        <div> 
+          <button type="button" class="btn btn-dark">STUDENT DETAILS</button>
+        </div>
+        <div class="container option">
+            <div class="row">
+              <div class="col"><button type="button" class="btn btn-dark">PREVIOUS RESULTS</button></div>
+              <div class="col"><button type="button" class="btn btn-dark">COURSE COMPLETED</button></div>
+              <div class="w-100"></div>
+              <div class="col"><button type="button" class="btn btn-dark">COMPLAINT</button></div>
+              <div class="col"><button type="button" class="btn btn-dark">LT-BOOKING</button></div>
+          </div>
+          <div class="upcoming">
+            <button type="button" class="btn btn-dark">UPCOMING EVENTS</button>
+          </div>
+        </div>
+      </center>
+    </div>
 
-
-
-
-
+</main>
 
 <!-- footer ---->
 <footer class="navbar fixed-bottom">
   <span class="navbar-brand">&copy Copyright 2019</span>
 </footer>
 
-
-</body>
-</html>
+  </body>
+  </html>
