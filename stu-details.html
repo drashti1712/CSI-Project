@@ -5,19 +5,26 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
+		<meta name="theme-color" content="#000000" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href=".\style.css">
+		<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+		<link rel="stylesheet" type="text/css" href=".\stu-details.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script  src= ".\script.js"type="text/javascript"></script>
+		<script  src= "./stu-details.js"type="text/javascript"></script>
 		<title>Student-Details</title>
+
 	</head>
 
 
 	<body>
-		<!--navbar------------------------------------------------------------------------->
+		<!--navbar----------------------------------------------------------------------->
 		<nav class="navbar navbar-reverse fixed-top">
 	        <a class="navbar-brand" href="#">
 	          <img src="images/logolnm.png" alt="lnm-logo" id="nav-img">
@@ -40,11 +47,26 @@
     	</nav>
 
     	<!----------------main-----------------------------> 
-		<main>
-			<div class="container-fluid" id="div1">
-				
-				<div class="row">
+		<main class="stu-main form-row">
+			<nav class="side-bar navbar navbar-expand-md col-md-2">
+    <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
+        Menu
+    </button>
+    <div class="navbar-collapse collapse flex-column" id="collapsingNavbarSm">
+        <ul class="navbar-nav nav">
+            <li class="nav-item"><a href="#" class="btn">Student Details</a></li>
+            <li class="nav-item"><a href="#" class="btn">Previous Results</a></li>
+            <li class="nav-item"><a href="#" class="btn">Course completed</a></li>
+            <li class="nav-item"><a href="Complaint.html" class="btn">Complaint</a></li>
+            <li class="nav-item"><a href="lt-booking.html" class="btn">LT booking</a></li>
+            <li class="nav-item"><a href="#" class="btn">Upcoming events</a></li>
+        </ul>
+    </div>
+    
+</nav>
 
+			<div class="container-fluid col-md-10" id="div1">				
+				<div class="row">
 					<!--Section 1-->
 					<div class="col-md-2">
 						<div class="sec1">
@@ -58,6 +80,9 @@
 							<div id="pic-details">
 								<b>Year:</b><br>2nd <br>
 								<b>Roll Number:</b><br> 17DCS002 <br>
+						
+
+
 								<b>Branch:</b><br> CSE-Dual Deg. <br>
 							</div>
 						</div>

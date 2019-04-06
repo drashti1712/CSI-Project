@@ -1,15 +1,18 @@
+/*
+#AAABB8 -lavender
+#464866 -greyish purple
+#25274D -navbar wala
+#2E9CCA -hi user wala
+#29648A -medium blue
+*/
 body{
 	background-color:#2E9CCA; 
 }
-h1{
-	background-color:black;
-	color:white;
-}
 main{
-	position:relative;
-	left:200px;
-	top:65px;
-	width:1150px;
+	/position:relative;
+	/left:200px;
+	/top:65px;
+	/width:1150px;
 }
 #personal-details{
 	display: block;
@@ -118,3 +121,27 @@ footer{
 	background-color: black;
 	color: white;
 }
+
+
+.stu-main{
+	margin-top: 65px;
+	text-align: center;
+}
+
+.side-bar{
+	color: white;
+	background-color: #2E9CCA; 
+	font-family: "Noto Serif SC", serif;
+	border-right: 2px solid black;
+}
+
+.nav-item{
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 10px 0;
+}
+
+
+/*mobile view*/
+
+@media (max-width: 300px;)

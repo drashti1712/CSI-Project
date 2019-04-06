@@ -1,27 +1,32 @@
-<!-- width less than 366
+<!-- dropdown img align
      button width vh
      layout shifts down early -->
 
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoadpacks.css?1552006117672">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoadpacks.css?1552006117672">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
   </head>
   <body>
-<!-- Navbar -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+<!-- Navbar ---------------------------------------------------->
 
     <nav class="navbar navbar-reverse fixed-top">
         <a class="navbar-brand" href="#">
@@ -44,8 +49,9 @@
           </div>
     </nav>
 
-<main>
-<!-- Caurosel -->
+<main class="home-main">
+
+<!-- Caurosel -------------------------------------------------->
 <div class="carousel slide layout animated slideInLeft" data-ride="carousel">
   <div class="carousel-header"><h1>Latest News</h1></div>
   <div class="carousel-inner">
@@ -67,32 +73,34 @@
   </div>
 </div>
 
-<!-- Main section --> 
+<!-- Main section ----------------------------------------------> 
     <div class="layout animated slideInRight">
       <center>
-        <div> 
+        
+        <div class="container option">
+            <div> 
           <button type="button" class="btn btn-dark">STUDENT DETAILS</button>
         </div>
-        <div class="container option">
             <div class="row">
               <div class="col"><button type="button" class="btn btn-dark">PREVIOUS RESULTS</button></div>
               <div class="col"><button type="button" class="btn btn-dark">COURSE COMPLETED</button></div>
               <div class="w-100"></div>
               <div class="col"><button type="button" class="btn btn-dark">COMPLAINT</button></div>
               <div class="col"><button type="button" class="btn btn-dark">LT-BOOKING</button></div>
-          </div>
-          <div class="upcoming">
-            <button type="button" class="btn btn-dark">UPCOMING EVENTS</button>
-          </div>
+            </div>
+            <div class="upcoming">
+              <button type="button" class="btn btn-dark">UPCOMING EVENTS</button>
+            </div>
         </div>
       </center>
     </div>
 
 </main>
 
-<!-- footer -->
-<footer class="navbar fixed-bottom">
+<!-- footer ---->
+<footer class="footer navbar fixed-bottom">
   <span class="navbar-brand">&copy Copyright 2019</span>
+  <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 </footer>
 
   </body>

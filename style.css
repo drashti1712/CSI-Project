@@ -1,8 +1,8 @@
 /*
 #AAABB8
-#464866
-#25274D
-#2E9CCA
+#464866  light blue
+#25274D  dark blue
+#2E9CCA  light green
 #29648A
 */
 
@@ -30,7 +30,7 @@ nav{
 	width: 40px;	
 }
 
-main {
+.home-main {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -46,7 +46,7 @@ main {
 
 .layout button{
 	margin: 6vh 0;
-	width: 35vh;
+	width: 200px;
 	background-color: #464866;
 	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
@@ -54,12 +54,11 @@ main {
 .carousel {
 	display: inline-block;
 	width: 300px;
-	border: 2px solid #29648A;
-	/height: 60vh;
+	border: 2px solid black;
 	margin-top: 80px;
 	font-family: "Noto Serif SC", serif;
-	background-color: black;
-	color: #2E9CCA;
+	background-color: #29648A;
+	color: white;
 }
 
 .carousel-header {
@@ -73,11 +72,17 @@ main {
 
 .carousel-inner {
 	padding: 20px;
-	height: 50vh;s
+	height: 50vh;
 }
 
-footer{
+.footer{
 	background-color: black;
 	color: white;
 }
+
+#scroll-top{
+	display: none;
+}
+
+
 
