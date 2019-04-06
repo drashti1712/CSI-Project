@@ -5,11 +5,7 @@
 #2E9CCA -hi user wala
 #29648A -medium blue
 */
-/*puri body ka color*/
-body{
-	background-color:#AAABB8; 
-}
-/*start krne pe first tab display krne k liye*/
+
 #personal-details{
 	display: block;
 }
@@ -17,15 +13,16 @@ body{
 #div1{
 	margin:auto;
 	height:100%;
-	background-color:#AAABB8;
+	background-color:white;
 }
 
 .sec1{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-around;
-	width:185px;
-	background-color: white;
+	width:190px;
+	height:80vh;
+	background-color:#e7eced;
 }
 
 header{
@@ -43,6 +40,7 @@ header{
 .sec2{
 	display:flex;
 	flex-direction:column;
+	width:900px;
 }
 .form-box{
 	overflow-x:auto;
@@ -60,10 +58,9 @@ header{
 .responsive {
   width: 100%;
   max-width: 180px;
-  height: auto;
   padding:20px;
-	display: block;
-	margin:auto;
+  display: block;
+  margin:auto;
 }
 
 /* Style the tab */
@@ -126,7 +123,7 @@ footer{
 	justify-content:flex-start;
 	color: white;
 	height:;
-	background-color: #2E9CCA; 
+	background-color: #AAABBB; 
 	font-family: "Noto Serif SC", serif;
 	border-right: 2px solid black;
 	text-align: center;

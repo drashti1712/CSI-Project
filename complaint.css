@@ -10,7 +10,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+h1{
+	font-family:'Permanent Marker';
+}
 nav{
 	background-color: #25274D;
 	font-family: "Noto Serif SC", serif;
