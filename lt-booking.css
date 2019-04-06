@@ -1,0 +1,97 @@
+/*
+#AAABB8
+#464866  light blue
+#25274D  dark blue
+#2E9CCA  light green
+#29648A
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background-color: #25274D;
+	font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+	height: 40px;
+	width: auto;
+}
+
+.dropdown button{
+	background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+	height: 40px;
+	width: 40px;	
+}
+
+.lt-main{
+	margin-top: 65px;
+	text-align: center;
+}
+
+.side-bar{
+	color: white;
+	background-color: #2E9CCA; 
+	font-family: "Noto Serif SC", serif;
+	border-right: 2px solid black;
+}
+
+.nav-item{
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 10px 0;
+}
+
+.info-bar{
+  background: #29648A;
+  border-right: 2px solid black;
+  padding: 0 10px;
+  align-items: center;
+}
+
+form .form-row{
+	padding: 10px;
+}
+
+.form-group{
+	margin: 0 auto;
+}
+
+.list-group{
+	margin: 0 auto;
+}
+
+.main-bar{
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+.lt-btn {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+.lt-btn:hover {
+  background-color: lightgray;
+}
+.lt-btn:focus {
+  background-color: lightseagreen;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+}
+
+#scroll-top{
+	display: none;
+}
