@@ -5,15 +5,11 @@
 #2E9CCA -hi user wala
 #29648A -medium blue
 */
+/*puri body ka color*/
 body{
-	background-color:#2E9CCA; 
+	background-color:#AAABB8; 
 }
-main{
-	/position:relative;
-	/left:200px;
-	/top:65px;
-	/width:1150px;
-}
+/*start krne pe first tab display krne k liye*/
 #personal-details{
 	display: block;
 }
@@ -22,37 +18,34 @@ main{
 	margin:auto;
 	height:100%;
 	background-color:#AAABB8;
-
 }
 
-#title{
+.sec1{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	width:185px;
+	background-color: white;
+}
+
+header{
 	font-size:20px;
 	background-color:#e7eced ;
 	height:40px;
 	color: #25274D;
 	text-align: center;
-	padding-top:5px;
+	vertical-align: middle;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;	
 }
 #pic-details{
 	padding:15px;
 }
-.sec1{
-	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	width:180px;
-	background-color: white;
-}
-
 .sec2{
 	display:flex;
 	flex-direction:column;
-	align-items:stretch;
 }
 .form-box{
-	margin-top:20px;
-	margin-left:20px;
+	overflow-x:auto;
 }
 .tablinks{
 	background-color: #464866 ;
@@ -124,24 +117,39 @@ footer{
 
 
 .stu-main{
-	margin-top: 65px;
-	text-align: center;
+	margin-top:70px;
 }
 
 .side-bar{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
 	color: white;
+	height:;
 	background-color: #2E9CCA; 
 	font-family: "Noto Serif SC", serif;
 	border-right: 2px solid black;
+	text-align: center;
 }
 
 .nav-item{
 	width: 100%;
 	border-bottom: 1px solid black;
-	padding: 10px 0;
+	padding: 10px ;
 }
-
-
-/*mobile view*/
-
-@media (max-width: 300px;)
+@media screen and (max-width:350px){
+	.sec1{
+		width:300px;
+		text-align:center;
+	}
+	#pic-details{
+		padding-top:0px;
+		padding-bottom:10px;
+	}
+	.form-box{
+		margin:0px;
+	}
+	.sidebar{
+		border-width:0px;
+	}
+}
