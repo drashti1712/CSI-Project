@@ -47,8 +47,8 @@
     </nav>
 
 <!--main section-->
-<div class="comp-main form-row">
-<nav class="side-bar navbar navbar-expand-md col-md-2">
+
+<!-- <nav class="side-bar navbar navbar-expand-md col-md-2">
     <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
         Menu
     </button>
@@ -63,13 +63,22 @@
         </ul>
     </div>
     
-</nav>
+</nav> -->
 
+<div class="sidebar">
+  <a href="stu-details.html" class="btn">Student Details</a>
+  <a href="#" class="btn">Previous Results</a>
+  <a href="#" class="btn">Course completed</a>
+  <a href="complaint.html" class="btn">Complaint</a>
+  <a href="lt-booking.html" class="btn">LT booking</a>
+  <a href="#" class="btn active">Library book issue</a>
+</div>
 
-  <div class="com col-md-10">
-    <h1><center>Library Book-Issue Portal</center></h1>
+<div class="comp-main form-row">
+  <div class="com col-md-10 content">
+    <h1 class="header"><center>Library Book-Issue Portal</center></h1>
 
-    <div class="info border rounded">
+    <div class="info border border-info rounded">
       <h3>Student Information</h3>
 
         <div class="form-row">
@@ -112,7 +121,7 @@
         </div>
     </div>
 
-    <div class="info border rounded">
+    <div class="info border border-info rounded">
       <h3>Booking</h3>
       <div class="form-row">
         <div class="form-group col-md-2">
@@ -153,15 +162,17 @@
           </div>
           <div class="form-group col-md-2">         
           </div>
-          <button class="btn btn-outline-dark search">Search</button>
+          <button class="btn btn-outline-info search" onclick="hide('hidden')">Search</button>
       </div>
-      <div class="hidden">
-      <div onclick={}>
+      <ol id="hidden">
+      <li>
         <img src="">
         <h3>Introduction to electrodynamics</h3>
-        <p>Available: 20</p>
-      </div>  
-    </div>
+        <p class="badge-warning badge-pill col-6 mx-auto">Available: 20</p>
+        <button class="btn btn-outline-success" onclick="hide('hidden2')">Book</button>
+        <p id="hidden2" class="badge-danger badge-pill col-6 mx-auto">You have 15 days left</p>
+      </li>  
+    </ol>
     <!-- <div class="buttons">
         <button type="button" class="btn btn-outline-success">Submit
         </button>
@@ -178,7 +189,7 @@
 <!-- footer -->
     <footer class="footer navbar fixed-bottom">
   <span class="navbar-brand">&copy Copyright 2019</span>
-  <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  <button id="scroll-top" onclick="toTop()" class="btn btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 </footer>
 
   </body>
