@@ -129,8 +129,11 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 65px;
     }
-    div.content {margin-left: 0;}
+  div.content {margin-left: 0;}
+  .comp-main{
+  margin-top: 10px;}
 }
 
 
