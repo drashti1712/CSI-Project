@@ -11,6 +11,10 @@
 	padding: 0;
 }
 
+body{
+   overflow-x: hidden;
+} 
+
 nav{
 	background-color: #25274D;
 	font-family: "Noto Serif SC", serif;
@@ -32,9 +36,11 @@ nav{
 
 .comp-main{
 	margin-top: 65px;
-	text-align: center;
+	/text-align: center;
   font-family: "Noto Serif SC", serif;
   margin-bottom: 65px;
+  /width: 90vw;
+  box-sizing: border-box;
 }
 
 .buttons{

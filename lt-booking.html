@@ -68,99 +68,15 @@
 </nav> -->
 <div class="sidebar">
   <a href="stu-details.html" class="btn">Student Details</a>
-            <a href="#" class="btn">Previous Results</a>
-            <a href="#" class="btn">Course completed</a>
-            <a href="Complaint.html" class="btn">Complaint</a>
-            <a href="#" class="btn active">LT booking</a>
-            <a href="library.html" class="btn">library Book Issue</a>
+  <a href="Complaint.html" class="btn">Complaint</a>
+  <a href="#" class="btn active">LT booking</a>
+  <a href="library.html" class="btn">library Book Issue</a>
 </div>
 
 <main class="lt-main form-row">
 <!--Info-Bar -->
-<!-- <div class="info-bar col-md-4 align-items-center content">
-  <h3>Booked Slots</h3>
-  <div class="form-row">
-  <ul class="list-group col-7 ">
-    <li class="list-group-item py-0">10:00-12:00 AM</li>
-    <li class="list-group-item py-0">1:00-3:00 PM</li>
-    <li class="list-group-item py-0">4:00-5:00 PM</li>
-    <li class="list-group-item py-0">6:30-7:30 PM</li>
-  </ul>
-</div>
-    <h3>Booking on Date: </h3>
-    <div class="form-row">
-      <div class="form-group col-3">
-      <input min="1" max="31" type="number" id="day" class="form-control" placeholder="Day"/>
-    </div>
-      <div class="form-group col-4">
-      <select id="month" class="form-control">
-            <option value="" selected >Month</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          
-    </div>      
-    <div class="form-group col-3">
-    <button class="btn btn-outline-light form-control" onClick={this.handleDate}>GO</button>
-  </div>
-    </div>
-    
-    
-      
-    <h3>Time</h3>
-    <div class="form-row">
-      <div class="form-group col-5">
-        <label> From: </label>
-      <input type="time"  class="form-control"/>
-      
-    </div>
-    <div class="form-group col-5">
-    <label> To: </label>
-      <input type="time"  class="form-control"/>
-      
-      </div>
-    
-    
-    </div>
-    
-      
-  
-    <h3>Purpose of Booking:</h3>
-      <div class="form-row">
-        <div class="form-group col-8">
-        <input type="text" name="purpose" class="form-control">
-      </div>
-        
-      </div>
-      <div class="form-group">
-        <button class="btn btn-outline-light">Book</button>
-      </div>
-</div>-->
 
-<!--Matrix -------------------------------------------------------------->
-<!-- <div class="main-bar col-md-6">
-  <button class="lt-btn">LT 1</button>
-  <button class="lt-btn">LT 2</button>
-  <button class="lt-btn">LT 3</button>
-  <button class="lt-btn">LT 4</button>
-  <button class="lt-btn">LT 5</button>
-  <button class="lt-btn">LT 6</button>
-  <button class="lt-btn">LT 7</button>
-  <button class="lt-btn">LT 8</button>
-  <button class="lt-btn">LT 9</button>
-  <button class="lt-btn">LT 10</button>
-</div> -->
-  <div class="content col-md-10">
+  <div class="content col-md-9">
     <h1 class="header"><center>LT Booking</center></h1>
 
     <div class="info border rounded border-info">
@@ -225,17 +141,19 @@
 
     <div class="info border border-info rounded">
       <h3>LTs Available</h3>
-      <div class="main-bar form-row col-md-10 mx-auto offset-1">
-  <button class="lt-btn" onclick="hide()">LT 1</button>
-  <button class="lt-btn" onclick="hide()">LT 2</button>
-  <button class="lt-btn" onclick="hide()">LT 3</button>
-  <button class="lt-btn" onclick="hide()">LT 4</button>
-  <button class="lt-btn" onclick="hide()">LT 5</button>
-  <button class="lt-btn" onclick="hide()">LT 6</button>
-  <button class="lt-btn" onclick="hide()">LT 7</button>
-  <button class="lt-btn" onclick="hide()">LT 8</button>
-  <button class="lt-btn" onclick="hide()">LT 9</button>
-  <button class="lt-btn" onclick="hide()">LT 10</button>
+      <div class="main-bar form-row">
+        <div class="col-md-10 mx-auto">
+  <button class="lt-btn" onclick="hide('hidden')">LT 1</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 2</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 3</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 4</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 5</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 6</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 7</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 8</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 9</button>
+  <button class="lt-btn" onclick="hide('hidden')">LT 10</button>
+</div>
 </div>
 <div id="hidden">
   <h3>Booked Slots</h3>

@@ -6,28 +6,27 @@
 #29648A -medium blue
 */
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+   overflow-x: hidden;
+}
+
 #personal-details{
 	display: block;
 }
 
-#div1{
-	margin:auto;
-	height:100%;
-	background-color:white;
-}
-
 .sec1{
-	/*display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	/width:190px;
-	height:80vh;*/
 	background-color:#e7eced;
+  height: 75vh;
 }
 
 header{
 	font-size:20px;
-	background-color:#e7eced ;
+	background-color:#e7eced;
 	height:40px;
 	color: #25274D;
 	text-align: center;
@@ -37,14 +36,7 @@ header{
 #pic-details{
 	padding:15px;
 }
-.sec2{
-	display:flex;
-	flex-direction:column;
-	width:900px;
-}
-.form-box{
-	overflow-x:auto;
-}
+
 .tablinks{
 	background-color: #464866 ;
 	height:auto;
@@ -83,12 +75,12 @@ header{
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  /padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
 
-/*navbar*/
+/*navbar*******************************************/
 nav{
 	background-color: #25274D;
 	font-family: "Noto Serif SC", serif;
@@ -107,31 +99,19 @@ nav{
 	height: 40px;
 	width: 40px;	
 }
+
+
+
+.stu-main{
+	margin-top: 65px;
+	margin-bottom: 65px;
+	/height: 70vh;
+	font-family: "Noto Serif SC", serif;
+}
+
 footer{
 	background-color: black;
 	color: white;
-}
-
-
-main{
-	margin-top: 65px;
-	margin-bottom: 65px;
-}
-@media screen and (max-width:350px){
-	.sec1{
-		width:300px;
-		text-align:center;
-	}
-	#pic-details{
-		padding-top:0px;
-		padding-bottom:10px;
-	}
-	.form-box{
-		margin:0px;
-	}
-	.sidebar{
-		border-width:0px;
-	}
 }
 
 /**  Sidebar********************************************************************** */

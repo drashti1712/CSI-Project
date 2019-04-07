@@ -48,58 +48,34 @@
 
 
 <div class="sidebar">
-  <a href="stu-details.html" class="btn active">Student Details</a>
-            <a href="#" class="btn">Previous Results</a>
-            <a href="#" class="btn">Course completed</a>
-            <a href="complaint.html" class="btn">Complaint</a>
-            <a href="lt-booking.html" class="btn">LT booking</a>
-            <a href="#" class="btn">Upcoming events</a>
+  <a href="#" class="btn active">Student Details</a>
+  <a href="complaint.html" class="btn">Complaint</a>
+  <a href="lt-booking.html" class="btn">LT booking</a>
+  <a href="library.html" class="btn">Library Book Issue</a>
 </div>
     	<!----------------main-----------------------------> 
-		<!--<main class="form-row">-->
-			<!-- <nav class="side-bar navbar navbar-expand-md col-md-2">
-			    <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
-			        Menu
-			    </button>
-			    <div class="navbar-collapse collapse flex-column" id="collapsingNavbarSm">
-			        <ul class="navbar-nav nav">
-			            <li class="nav-item active"><a href="stu-details.html" class="btn">Student Details</a></li>
-			            <li class="nav-item"><a href="#" class="btn">Previous Results</a></li>
-			            <li class="nav-item"><a href="#" class="btn">Course completed</a></li>
-			            <li class="nav-item"><a href="complaint.html" class="btn">Complaint</a></li>
-			            <li class="nav-item"><a href="lt-booking.html" class="btn">LT booking</a></li>
-			            <li class="nav-item"><a href="#" class="btn">Upcoming events</a></li>
-			        </ul>
-			    </div>
-    
-			</nav> -->
-			<main>
-			<div class="container-fluid col-md-8 content" id="div1">				
-				<div class="row">
+			<div class="stu-main form-row">
+			<div class="col-md-9 content" id="div1">				
 					<!--Section 1-->
-					<div class="col-md-3">
-						<div class="sec1">
+					<div class="form-row">
+					<div class="col-md-3 sec1 form-group">
 							<!--title-->
 							<header>Welcome Drashti!</header>
 							<!--photo-->
-							<div>
-								<img src="images/user.png" alt="profile image" class="responsive">
-							</div>
+							<img src="images/user.png" alt="profile image" class="responsive">
 							<!--details-->
 							<div id="pic-details">
 								<b>Year:</b><br>2nd <br>
 								<b>Roll Number:</b><br> 17DCS002 <br>
 								<b>Branch:</b><br> CSE-Dual Deg. <br>
 							</div>
-						</div>
 					</div>
 
 
 					<!--Section 2-->
-					<div class="col-md-9">
-						<div class="sec2">
+					<div class="col-md-9 sec2 form-group" id="div2">
 							<!--buttons-->
-							<div id="div2">
+							<div >
 								<ul class="nav nav-tabs tab">
 									<div class="btn-group">
 										<li><button class="btn btn-md tablinks active" onclick="openTab(event, 'personal-details')">Personal Details
@@ -430,11 +406,10 @@
 									</table>
 								</form> 
 							</div>
-						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-		</main>
 
 		<!----footer----->
 		<footer class="navbar fixed-bottom">
