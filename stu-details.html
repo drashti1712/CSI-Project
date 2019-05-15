@@ -37,7 +37,7 @@
 	            </button>
 	        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 	          <li class="img1"><a class="dropdown-item" href="#"><img src="images/user.jpg"></a></li>
-	          <li><a class="dropdown-item" href="#">Home</a></li>
+	          <li><a class="dropdown-item" href="index.html">Home</a></li>
 	          <li><a class="dropdown-item" href="#">Logout</a></li>
 	          <li><a class="dropdown-item" href="#">Change Password</a></li>
 
@@ -46,54 +46,36 @@
 	          </div>
     	</nav>
 
-    	<!----------------main-----------------------------> 
-		<main class="stu-main form-row">
-			<nav class="side-bar navbar navbar-expand-md col-md-2">
-    <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
-        Menu
-    </button>
-    <div class="navbar-collapse collapse flex-column" id="collapsingNavbarSm">
-        <ul class="navbar-nav nav">
-            <li class="nav-item"><a href="#" class="btn">Student Details</a></li>
-            <li class="nav-item"><a href="#" class="btn">Previous Results</a></li>
-            <li class="nav-item"><a href="#" class="btn">Course completed</a></li>
-            <li class="nav-item"><a href="Complaint.html" class="btn">Complaint</a></li>
-            <li class="nav-item"><a href="lt-booking.html" class="btn">LT booking</a></li>
-            <li class="nav-item"><a href="#" class="btn">Upcoming events</a></li>
-        </ul>
-    </div>
-    
-</nav>
 
-			<div class="container-fluid col-md-10" id="div1">				
-				<div class="row">
+<div class="sidebar">
+  <a href="#" class="btn active">Student Details</a>
+  <a href="complaint.html" class="btn">Complaint</a>
+  <a href="lt-booking.html" class="btn">LT booking</a>
+  <a href="library.html" class="btn">Library Book Issue</a>
+</div>
+    	<!----------------main-----------------------------> 
+			<div class="stu-main form-row">
+			<div class="col-md-9 content" id="div1">				
 					<!--Section 1-->
-					<div class="col-md-2">
-						<div class="sec1">
+					<div class="form-row">
+					<div class="col-md-3 sec1 form-group">
 							<!--title-->
-							<div id="title">Welcome Drashti!</div>
+							<header>Welcome Drashti!</header>
 							<!--photo-->
-							<div id="pic">
-								<img src="images/user.png" alt="profile image" class="responsive">
-							</div>
+							<img src="images/user.png" alt="profile image" class="responsive">
 							<!--details-->
 							<div id="pic-details">
 								<b>Year:</b><br>2nd <br>
 								<b>Roll Number:</b><br> 17DCS002 <br>
-						
-
-
 								<b>Branch:</b><br> CSE-Dual Deg. <br>
 							</div>
-						</div>
 					</div>
 
 
 					<!--Section 2-->
-					<div class="col-md-10">
-						<div class="sec2">
+					<div class="col-md-9 sec2 form-group" id="div2">
 							<!--buttons-->
-							<div id="div2">
+							<div >
 								<ul class="nav nav-tabs tab">
 									<div class="btn-group">
 										<li><button class="btn btn-md tablinks active" onclick="openTab(event, 'personal-details')">Personal Details
@@ -106,7 +88,7 @@
 							<!--AllDetails-->
 							<div id="personal-details" class="tabcontent active" >
 								<form action="/action_page.php">
-									<table class="form-box">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
 										<tr>
 											<div class="form-group">
 												<td width="20%">
@@ -191,7 +173,7 @@
 											<div class="form-group">
 												  <td>Gender:</td>
 												  <td>
-												  	<label class="radio-inline"><input type="radio" name="Gender" checked="yes"> Female</label>
+												  	<label class="radio-inline "><input type="radio" name="Gender" checked="yes"> Female</label>
 												  	<label class="radio-inline"><input type="radio" name="Gender" disabled="yes"> Male</label>
 												  	<label class="radio-inline"><input type="radio" name="Gender" disabled="yes"> Other</label>
 												  </td>
@@ -213,7 +195,7 @@
 							<!--address details-->
 							<div id="address-details" class="tabcontent">
 								<form action="/action_page.php">
-									<table class="form-box">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
 										<tr>
 											<div class="form-group">
 												<td width="15%">
@@ -328,7 +310,7 @@
 							<!--admission-details-->
 							<div id="admission-details" class="tabcontent">
 								<form action="/action_page.php">
-									<table class="form-box">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
 										<tr>
 											<div class="form-group">
 												<td width="20%">
@@ -424,11 +406,10 @@
 									</table>
 								</form> 
 							</div>
-						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-		</main>
 
 		<!----footer----->
 		<footer class="navbar fixed-bottom">

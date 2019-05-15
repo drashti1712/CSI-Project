@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000" />
-    <title>Complaint Registration</title>
+    <title>Library Book-Issue Portal</title>
 
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" type="text/css" href="complaint.css">
+    <link rel="stylesheet" type="text/css" href="library.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -67,16 +67,16 @@
 
 <div class="sidebar">
   <a href="stu-details.html" class="btn">Student Details</a>
-  <a href="#" class="btn active">Complaint</a>
+  <a href="complaint.html" class="btn">Complaint</a>
   <a href="lt-booking.html" class="btn">LT booking</a>
-  <a href="library.html" class="btn">Library Book Issue</a>
+  <a href="#" class="btn active">Library book issue</a>
 </div>
 
 <div class="comp-main form-row">
-  <div class="content col-md-9">
-    <h1 class="header"><center>Complaint Registration</center></h1>
+  <div class="com col-md-9 content">
+    <h1 class="header"><center>Library Book-Issue Portal</center></h1>
 
-    <div class="info border rounded border-info">
+    <div class="info border border-info rounded">
       <h3>Student Information</h3>
 
         <div class="form-row">
@@ -120,58 +120,64 @@
     </div>
 
     <div class="info border border-info rounded">
-      <h3>Complaint</h3>
+      <h3>Booking</h3>
       <div class="form-row">
-        <div class="form-group col-md-4">
-            <select id="Department" class="form-control">
-              <option selected="selected" value="-1">Department</option>
-              <option value="1">Dean of Academic Affairs</option>
-              <option value="2">Dean of Research and Consultancy</option>
-              <option value="3">Registrar</option>
-              <option value="4">Chief Warden</option>
-              <option value="5">Finance</option>
-              <option value="6">Maintanence</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">
-            <select id="Department" class="form-control">
-              <option selected="selected" value="-1">Site of Complaint</option>
-              <option value="1">BH-1</option>
-              <option value="2">BH-2</option>
-              <option value="3">BH-3</option>
-              <option value="4">GH</option>
-              <option value="5">Guest House</option>
-              <option value="6">Mess A</option>
-              <option value="7">Mess-B</option>
-              <option value="8">Main Gate 1</option>
-              <option value="9">Main Gate 2</option>
-              <option value="10">MME Building</option>
-              <option value="11">Central Library</option>
-              <option value="12">Medical Unit</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
             
-            <input type="email" class="form-control" id="inputName4" placeholder="Complaint To">
+          </div>  
+        <div class="form-group col-md-4">
+            <select id="Stream" class="form-control">
+              <option selected="selected" value="-1">Select Stream</option>
+              <option value="1">PG-Physics</option>
+              <option value="2">PG-Maths</option>
+              <option value="3">UG-CSE</option>
+              <option value="4">UG-ECE</option>
+              <option value="5">UG-MME</option>
+              <option value="6">HSS</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <select id="Year" class="form-control">
+              <option selected="selected" value="-1">Select Year</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
+              <option value="4">IV</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            
           </div>
       </div>
       <div class="form-row">
+        <div class="form-group col-md-2">         
+          </div>
         <div class="form-group col-md-4">            
-            <input type="text" class="form-control" id="inputName4" placeholder="Complaint Details">
+            <input type="text" class="form-control" id="inputName4" placeholder="Book Name">
           </div>
           <div class="form-group col-md-4">            
-            <input type="tel" class="form-control" id="inputName4" placeholder="Contact No.">
+            <input type="text" class="form-control" id="inputName4" placeholder="Book Author">
           </div>
-          <div class="form-group col-md-4">            
-            <input type="date" class="form-control" id="inputName4" placeholder="First Name">
+          <div class="form-group col-md-2">         
           </div>
+          <button class="btn btn-outline-info search" onclick="hide('hidden')">Search</button>
       </div>
+      <div id="hidden">
+        <img src="">
+        <h3>Introduction to electrodynamics</h3>
+        <p class="badge-warning badge-pill col-6 mx-auto">Available: 20</p>
+        <button class="btn btn-outline-success" onclick="hide('hidden2')">Book</button>
+        <p id="hidden2" class="badge-danger badge-pill col-6 mx-auto">You have 15 days left</p>
     </div>
-    <div class="buttons">
+    <!-- <div class="buttons">
         <button type="button" class="btn btn-outline-success">Submit
         </button>
         <button type="button" class="btn btn-outline-danger">Cancel
         </button>
+    </div> -->
+    
+      
+
     </div>
   </div>
 </div>
@@ -179,7 +185,7 @@
 <!-- footer -->
     <footer class="footer navbar fixed-bottom">
   <span class="navbar-brand">&copy Copyright 2019</span>
-  <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  <button id="scroll-top" onclick="toTop()" class="btn btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 </footer>
 
   </body>

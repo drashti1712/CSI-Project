@@ -5,55 +5,38 @@
 #2E9CCA -hi user wala
 #29648A -medium blue
 */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body{
-	background-color:#2E9CCA; 
+   overflow-x: hidden;
 }
-main{
-	/position:relative;
-	/left:200px;
-	/top:65px;
-	/width:1150px;
-}
+
 #personal-details{
 	display: block;
 }
 
-#div1{
-	margin:auto;
-	height:100%;
-	background-color:#AAABB8;
-
+.sec1{
+	background-color:#e7eced;
+  height: 75vh;
 }
 
-#title{
+header{
 	font-size:20px;
-	background-color:#e7eced ;
+	background-color:#e7eced;
 	height:40px;
 	color: #25274D;
 	text-align: center;
-	padding-top:5px;
+	vertical-align: middle;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;	
 }
 #pic-details{
 	padding:15px;
 }
-.sec1{
-	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	width:180px;
-	background-color: white;
-}
 
-.sec2{
-	display:flex;
-	flex-direction:column;
-	align-items:stretch;
-}
-.form-box{
-	margin-top:20px;
-	margin-left:20px;
-}
 .tablinks{
 	background-color: #464866 ;
 	height:auto;
@@ -67,10 +50,9 @@ main{
 .responsive {
   width: 100%;
   max-width: 180px;
-  height: auto;
   padding:20px;
-	display: block;
-	margin:auto;
+  display: block;
+  margin:auto;
 }
 
 /* Style the tab */
@@ -93,12 +75,12 @@ main{
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  /padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
 
-/*navbar*/
+/*navbar*******************************************/
 nav{
 	background-color: #25274D;
 	font-family: "Noto Serif SC", serif;
@@ -117,31 +99,68 @@ nav{
 	height: 40px;
 	width: 40px;	
 }
+
+
+
+.stu-main{
+	margin-top: 65px;
+	margin-bottom: 65px;
+	/height: 70vh;
+	font-family: "Noto Serif SC", serif;
+}
+
 footer{
 	background-color: black;
 	color: white;
 }
 
+/**  Sidebar********************************************************************** */
 
-.stu-main{
-	margin-top: 65px;
-	text-align: center;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-.side-bar{
-	color: white;
-	background-color: #2E9CCA; 
-	font-family: "Noto Serif SC", serif;
-	border-right: 2px solid black;
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
 }
 
-.nav-item{
-	width: 100%;
-	border-bottom: 1px solid black;
-	padding: 10px 0;
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
 }
 
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: auto;
+}
 
-/*mobile view*/
-
-@media (max-width: 300px;)
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 65px;
+    }
+  div.content {margin-left: 0;}
+  .comp-main{
+  margin-top: 10px;}
+}
