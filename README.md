@@ -5,7 +5,8 @@ SID is similar to the MIS portal that is currently being used by the students. T
 Also, SID will be mobile responsive which makes it easier for the students to access the website on mobile phones too.
 
 Languages used:
-1. HTMl
-2. CSS
+1. HTML5
+2. CSS3
 3. Javascript
-4. Bootstrap
+4. Bootstrap4
+5. Jquery
